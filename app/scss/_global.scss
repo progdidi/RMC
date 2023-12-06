@@ -1,5 +1,17 @@
 @import 'var';
 
+@font-face {
+    font-family: "Larken-Medium";
+    src: url('../fonts/LarkenDEMO-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Larken-Regular";
+    src: url('../fonts/LarkenDEMO-Regular.otf');
+    font-weight: 400;
+}
+
 *,
 *::before,
 *::after {
@@ -8,12 +20,21 @@
     margin: 0;
 }
 
+:root {
+    --orange-color: #FFC978;
+    --mid-orange-color: #FFAF76;
+    --dark-orange-color: #FFB076;
+    --grey-color: #ABAEB7;
+    --dark-blue-color: #0B0E17;
+}
+
 body {
-    // font-family: 'Montserrat', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 25px;
 }
+
+
 
 
 a{
