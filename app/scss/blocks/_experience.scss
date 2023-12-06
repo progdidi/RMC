@@ -1,0 +1,29 @@
+.experience {
+    &__inner {
+        display: flex;
+        .experience__img {
+        }
+        .experience__info {
+            .experience__title {
+                margin-bottom: 50px;
+            }
+            .experience__items {
+                display: flex;
+                gap: 74px;
+                margin-bottom: 50px;
+                .experience__item {
+                    &-num {
+                    }
+                    &-text {
+                    }
+                }
+            }
+            
+            
+            .experience__button {
+            }
+        }
+        
+    }
+}
+
