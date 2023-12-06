@@ -32,9 +32,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 25px;
+    background-color: var(--dark-blue-color);
+    color: #fff;
 }
-
-
 
 
 a{
@@ -44,11 +44,43 @@ a{
 
 button{
     cursor: pointer;
+    background-color: transparent;
+}
+
+.container-fluid {
+    max-width: 1740px;
+    padding: 0 10px;
+    margin: 0 auto; 
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1310px;
     padding: 0 10px;
     margin: 0 auto;
+}
+
+.main-btn {
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #FFF;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #fff;
+        color: var(--dark-blue-color);
+        transform: scale(1.1);
+
+    }
+}
+
+.section__subtitle {
+    color: var(--orange-color);
+    font-family: 'Larken-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
 }
 
