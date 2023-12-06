@@ -1,0 +1,36 @@
+.projects {
+    &__top {
+        margin-bottom: 50px;
+        .projects__subtitle {
+            margin-bottom: 15px;
+        }
+        .projects__title {
+        }
+        .projects__menu {
+            display: flex;
+            gap: 40px;
+            .projects__btn {
+                border-bottom: 1px solid transparent;
+                &.active {
+                    color: var(--mid-orange-color);;
+                    border-bottom: 1px solid var(--mid-orange-color);
+                }
+            }
+        }
+    }
+    
+    
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        .projects__item {
+            &-link {
+            }
+            &-img {
+            }
+        }
+    }
+    
+}
+
