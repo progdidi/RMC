@@ -1,0 +1,38 @@
+.about {
+    &__inner {
+
+        display: flex;
+        justify-content: space-between;
+        .about__side {
+            .about__title {
+                margin-bottom: 48px;
+            }
+            .about__text {
+                margin-bottom: 33px;
+                width: 440px;
+            }
+            .about__info {
+                display: flex;
+                .about__info-num {
+                }
+                .about__info-text {
+                }
+            }
+
+            .about__link {
+            }
+            
+            .about__side-img {
+            }
+
+            &.right {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 30px;
+            }
+        }
+        
+    }
+    
+}
+
