@@ -1,9 +1,18 @@
 .experience {
+    padding: 62px 0;
+    background-image: url(../../images/experienceBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 160px;
     &__inner {
         display: flex;
+        justify-content: space-between;
         .experience__img {
         }
         .experience__info {
+            width: 49%;
+            padding-top: 42px;
             .experience__title {
                 margin-bottom: 50px;
             }
@@ -13,14 +22,28 @@
                 margin-bottom: 50px;
                 .experience__item {
                     &-num {
+                        color: var(--mid-orange-color);
+                        font-family: 'Larken-Regular', sans-serif;
+                        font-size: 64px;
+                        font-weight: 400;
+                        line-height: 70px;
+                        span {
+                            font-size: 32px;
+                        }
                     }
                     &-text {
+                        color: var(--grey-color);
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: normal;
                     }
                 }
             }
             
             
             .experience__button {
+                padding: 20px 35px;
+                text-transform: capitalize;
             }
         }
         
