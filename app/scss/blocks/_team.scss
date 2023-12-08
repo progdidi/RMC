@@ -1,0 +1,18 @@
+.team {
+    margin-bottom: 140px;
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__img {
+        margin-bottom: 50px;
+    }
+    &__list {
+        &-item {
+            padding: 30px 15px;
+        }
+    }
+}
+

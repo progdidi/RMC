@@ -1,0 +1,41 @@
+.availability {
+    margin-bottom: 140px;
+    .availability__head {
+        display: flex;
+        .availability__head-title {
+            .availability__subtitle {
+            }
+            .availability__title {
+            }
+        }
+        
+        .availability__head-text {
+        }
+    }
+
+    .availability__inner {
+        display: flex;
+        .availability__table {
+            .availability__table-header {
+            }
+            .availability__table-row {
+                &.project {
+                }
+                &.view {
+                }
+                
+            }
+            .availability__table-data {
+                .availability__table-link {
+                }
+            }
+        }
+        
+        
+        .availability__img {
+        }
+    }
+}
+
+
+
