@@ -1,40 +1,80 @@
 .availability {
-    margin-bottom: 140px;
+    margin-bottom: 20px;
     .availability__head {
         display: flex;
-        .availability__head-title {
+        justify-content: space-between;
+        margin-bottom: 60px;
+        &-title {
             .availability__subtitle {
+                margin-bottom: 20px;
             }
             .availability__title {
             }
         }
         
-        .availability__head-text {
+        &-text {
+            
+            color: #D7E0E1;
+            width: 470px;
+            padding-top: 36px;
+            padding-bottom: 62px;
+            
         }
     }
 
     .availability__inner {
         display: flex;
         .availability__table {
-            .availability__table-header {
-            }
-            .availability__table-row {
+            border-collapse: collapse;
+            &-header {
+                color: var(--dark-orange-color);
+                font-family: 'Larken-Medium', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.8px;
+                text-transform: capitalize;
+            &-row {
+                padding: 20px 0;
+                border-bottom: 1px solid #ABAEB7;
+                transition: all 0.3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
                 &.project {
+                    
                 }
                 &.view {
                 }
-                
             }
-            .availability__table-data {
+            &-data {
+                padding: 0 30px;
+                color: var(--grey-color);
+                font-size: 16px;
+                line-height: normal;
+                letter-spacing: 0.48px;
                 .availability__table-link {
+                    color: #fff;
+                    font-size: 16px;
+                    letter-spacing: 0.48px;
+                    text-decoration-line: underline;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: var(--orange-color);
+                    }
+                }
+                &.project {
+                    color: #fff;
                 }
             }
         }
         
         
         .availability__img {
+            margin-left: 50px;
         }
     }
+}
 }
 
 

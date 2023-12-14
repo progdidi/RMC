@@ -1,6 +1,5 @@
 .about {
     &__inner {
-
         display: flex;
         justify-content: space-between;
         .about__side {
@@ -10,12 +9,28 @@
             .about__text {
                 margin-bottom: 33px;
                 width: 440px;
+                color: var(--grey-color);
+                margin-left: 78px;
             }
             .about__info {
                 display: flex;
+                align-items: end;
+                gap: 44px;
+                margin-bottom: 30px;
                 .about__info-num {
+                    font-family: 'Larken-Regular', sans-serif;
+                    font-size: 128px;
+                    font-weight: 400;
+                    line-height: normal;
+                    span {
+                        font-size: 64px;
+                    }
                 }
                 .about__info-text {
+                    width: 78px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
                 }
             }
 
