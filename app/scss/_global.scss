@@ -112,3 +112,18 @@ button{
         height: 150px;
     }
 }
+
+
+@media (max-width: 600px) {
+    .section__title {
+        font-size: 50px;
+        line-height: 60px; 
+    }
+}
+
+@media (max-width: 420px) {
+    .section__title {
+        font-size: 40px;
+        line-height: 48px; 
+    }
+}
