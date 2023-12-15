@@ -1,18 +1,31 @@
 .projects {
     margin-bottom: 140px;
     &__top {
-        margin-bottom: 50px;
-        .projects__subtitle {
-            margin-bottom: 15px;
-        }
-        .projects__title {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        &-head {
+            .projects__subtitle {
+                margin-bottom: 15px;
+            }
+            .projects__title {
+            }
         }
         .projects__menu {
             display: flex;
             gap: 40px;
             .projects__btn {
                 border-bottom: 1px solid transparent;
+                color: var(--grey-color);
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 26px;
+                transition: all 0.3s;
                 &.active {
+                    color: var(--mid-orange-color);;
+                    border-bottom: 1px solid var(--mid-orange-color);
+                }
+                &:hover {
                     color: var(--mid-orange-color);;
                     border-bottom: 1px solid var(--mid-orange-color);
                 }
@@ -26,6 +39,13 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
         .projects__item {
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+            &:nth-child(odd) {
+                margin-top: -50px;
+            }
             &-link {
             }
             &-img {

@@ -1,7 +1,9 @@
 .about {
+    margin-bottom: 140px;
     &__inner {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         .about__side {
             .about__title {
                 margin-bottom: 48px;
@@ -34,16 +36,24 @@
                 }
             }
 
+            .about__side-img {
+                display: inline-block;
+            }
+
             .about__link {
             }
             
-            .about__side-img {
-            }
+            
 
             &.right {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 30px;
+                .about__side-img {
+                    &:last-child {
+                        margin-top: -87px;
+                    }
+                }
             }
         }
         
