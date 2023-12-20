@@ -26,3 +26,20 @@
     }
 }
 
+@media (max-width: 700px) {
+    .team {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__img {
+            margin-bottom: 30px;
+        }
+        &__list {
+            &-item {
+                padding: 15px 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
