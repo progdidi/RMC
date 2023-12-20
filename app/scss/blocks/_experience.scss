@@ -8,7 +8,9 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        gap: 50px;
         .experience__img {
+            object-fit: cover;
         }
         .experience__info {
             width: 49%;
@@ -47,6 +49,52 @@
             }
         }
         
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience {
+        &__inner {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            .experience__info {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                .experience__items {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .experience {
+        &__inner {
+            .experience__info {
+                .experience__items {
+                    width: 90%;
+                    margin: 0 auto;
+                    gap: 30px;
+                    margin-bottom: 40px;
+                    .experience__item {
+                        &-num {
+                            font-size: 35px;
+                            line-height: 45px;
+                            span {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+
+                .experience__button {
+                    padding: 15px 25px
+                }
+            }
+        }
     }
 }
 
