@@ -54,8 +54,6 @@
 
 
     .promo {
-        display: flex;
-        align-items: center;
         &__info {
             width: 40%;
             background-image: url(../../images/wavePromo.svg);
@@ -86,6 +84,18 @@
             }
         }
         
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        background-size: 80%;
+        .promo {
+            &__info {
+                padding-top: 90px;
+                width: 80%;
+            }
+        }
     }
 }
 
@@ -149,7 +159,25 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 760px) {
+    .header {
+        background-size: cover;
+        .promo {
+            padding-bottom: 20px;
+            &__info {
+                width: 95%;
+                margin: 0 auto;
+                text-align: center;
+                .promo__title {
+                    font-size: 64px;
+                    line-height: 74px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
     .header {
         .header__top {
             .logo {
@@ -163,6 +191,34 @@
             }
             &-btn {
                 padding: 10px 15px;
+            }
+        }
+
+        .promo {
+            &__info {
+                .promo__title {
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+
+                .promo__btn {
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .header {
+        .promo {
+            &__info {
+                padding-top: 70px;
+                .promo__title {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+
             }
         }
     }
