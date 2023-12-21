@@ -32,6 +32,19 @@
                 &-link {
                 }
             }
+
+            &__btn {
+                width: 40px;
+                height: 30px;
+                flex-direction: column;
+                justify-content: space-between;
+                display: none;
+                span {
+                    width: 40px;
+                    height: 3px;
+                    background-color: #fff;
+                }
+            }
         }
         
         &-btn {
@@ -76,6 +89,84 @@
     }
 }
 
+
+@media (max-width: 870px) {
+    .header {
+        .header__top {
+            position: relative;
+            .menu {
+                &__list {
+                    transform: translateY(-1000%);
+                    transition: all 0.5s;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 80px;
+                    width: 100%;
+                    background-color: var(--dark-blue-color);
+                    &-item {
+                        color: #fff;
+                        width: 100%;
+                        border-bottom: 1px solid #fff;
+                        padding: 20px 0;
+                        transition: all 0.5s ease-in;
+                        text-align: center;
+                        &:hover {
+                            color: #fff;
+                            transform: scale(1.1);
+                        }
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                    &-link {
+                    }
+                    &.active {
+                        transform: translateY(0);
+                        
+                    }
+                }
+
+                &__btn {
+                    display: flex;
+                    position: absolute;
+                    right: 20px;
+                    top: 38px;
+                    z-index: 10;
+                }
+            }
+
+            &-btn {
+                margin-right: 80px;
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        .header__top {
+            .logo {
+                object-fit: cover;
+                max-width: 60%;
+            }
+            .menu {
+                &__btn {
+                    top: 33px;
+                }
+            }
+            &-btn {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
 
 
 

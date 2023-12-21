@@ -78,6 +78,43 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .availability {
+        .availability__inner {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            .availability__table {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .availability {
+        .availability__inner {
+            .availability__table {
+                width: 100%;
+                &-data {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .availability {
+        .availability__inner {
+            .availability__table {
+                
+            }
+        }
+    }
+}
+
 
 
 
