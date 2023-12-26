@@ -14,14 +14,52 @@
         display: flex;
         justify-content: center;
         gap: 30px;
+        position: relative;
+        // padding: 0 300px;
         .specialization__item {
             width: 300px;
             position: relative;
             transition: all 0.3s;
+            // &:first-child {
+            //     position: absolute;
+            //     bottom: 129px;
+            //     left: 0;
+            // }
+            // &:last-child {
+            //     position: absolute;
+            //     bottom: 129px;
+            //     right: 0;
+            // }
+            &:first-child {
+                margin-top: -129px;
+                .specialization__item-overlay {
+                    bottom: 129px;
+                }
+            }
+            &:last-child {
+                margin-top: -129px;
+                .specialization__item-overlay {
+                    bottom: 129px;
+                }
+            }
+            &-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255,255,255, 0);
+                transition: all 0.3s;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding: 10px;
+            }
             &:hover {
                 transform: scale(1.1);
-            }
-            &-img {
+                .specialization__item-overlay {
+                    background-color: rgba(255,255,255, 0.2);
+                }
             }
             &-title {
                 width: 230px;
@@ -35,12 +73,7 @@
                 width: 230px;
                 font-size: 16px;
             }
-            &:first-child {
-                margin-top: -129px;
-            }
-            &:last-child {
-                margin-top: -129px;
-            }
+            
         }
         
     }
@@ -56,10 +89,17 @@
         .specialization__item {
             &:first-child {
                 margin-top: 0;
+                 .specialization__item-overlay {
+                    bottom: 0;
+                }
             }
             &:last-child {
                 margin-top: 0;
+                 .specialization__item-overlay {
+                    bottom: 0;
+                 }
             }
+           
         }
     }
 }
