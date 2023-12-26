@@ -55,6 +55,7 @@
                 font-size: 16px;
                 line-height: normal;
                 letter-spacing: 0.48px;
+                position: relative;
                 .availability__table-link {
                     color: #fff;
                     font-size: 16px;
@@ -68,13 +69,19 @@
                 &.project {
                     color: #fff;
                 }
+                &::before {
+                    position: absolute;
+                    content: attr(data-label);
+                }
             }
         }
         
         
         .availability__img {
             margin-left: 50px;
+            object-fit: cover;
         }
+
     }
 }
 
@@ -94,6 +101,17 @@
 
 @media (max-width: 760px) {
     .availability {
+        .availability__head {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-title {
+                text-align: center;
+            }
+            &-text {
+                width: 80%;
+            }
+        }
         .availability__inner {
             .availability__table {
                 width: 100%;
@@ -107,6 +125,11 @@
 
 @media (max-width: 600px) {
     .availability {
+        .availability__head {
+            &-text {
+                width: 100%;
+            }
+        }
         .availability__inner {
             .availability__table {
                 
