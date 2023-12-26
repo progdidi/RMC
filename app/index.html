@@ -182,73 +182,92 @@
             </div>
 
             <div class="availability__inner">
-                <table class="availability__table">
-                    <tr class="availability__table-row">
-                        <th class="availability__table-header">RESIDENCE</th>
-                        <th class="availability__table-header">BED/BATH</th>
-                        <th class="availability__table-header">SQ. FT.</th>
-                        <th class="availability__table-header">SALE PRICE</th>
-                        <th class="availability__table-header">RENT PRICE</th>
-                        <th class="availability__table-header">FLOOR PLAN</th>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">LUX APARTMENT</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">THE GREEN VILLA</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">PENTHOUSE</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">SPA LUXURY</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">DUPLEX 13A</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">STUDIO 8A</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
-                    <tr class="availability__table-row">
-                        <td class="availability__table-data project">SIMPLEX 12A8</td>
-                        <td data-label="BED/BATH" class="availability__table-data">3/2</td>
-                        <td data-label="SQ. FT." class="availability__table-data">110</td>
-                        <td data-label="SALE PRICE" class="availability__table-data">$350,000</td>
-                        <td data-label="RENT PRICE" class="availability__table-data">$2,500</td>
-                        <td data-label="FLOOR PLAN" class="availability__table-data view"><a href="#" class="availability__table-link">VIEW NOW</a></td>
-                    </tr>
+                <div class="availability__table">
+                    <div class="table__row">					
+                        <ul class="table__head">
+                            <li class="table__head-item">RESIDENCE</li>
+                            <li class="table__head-item">BED/BATH</li>
+                            <li class="table__head-item">SQ. FT.</li>
+                            <li class="table__head-item">SALE PRICE</li>
+                            <li class="table__head-item">RENT PRICE</li>
+                            <li class="table__head-item">FLOOR PLAN</li>
+                        </ul>
+                    </div>
                     
-                </table>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">LUX APARTMENT</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">THE CREEN VILLA</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">PENTHOUSE</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">SPA LUXURY</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">DUPLEX 13A</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">STUDIO 8A</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    <div class="table__row">
+                        <ul class="table__project">					
+                            <li data-label="RESIDENCE" class="table__project-item project__name">SIMPLEX 12A8</li>
+                            <li data-label="BED/BATH" class="table__project-item">3/2</li>
+                            <li data-label="SQ. FT." class="table__project-item">110</li>
+                            <li data-label="SALE PRICE" class="table__project-item">$350,000</li>
+                            <li data-label="RENT PRICE<" class="table__project-item">$2,500</li>
+                            <li data-label="FLOOR PLAN" class="table__project-item"> <a href="" class="project__link">VIEW NOW</a> </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+
                 <img src="images/availability.png" alt="" class="availability__img">
             </div>
         </div>
